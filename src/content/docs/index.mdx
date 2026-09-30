@@ -1,40 +1,55 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
-template: splash # Remove or comment out this line to display the site sidebar on this page.
+title: Home
+description: Practical principles, patterns, and lessons for building, shipping, and selling modern software products in the AI era.
+template: splash
+
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  title: Build Better Products
+  tagline: Documentation and practical guides for building maintainable, scalable products in the AI era.
   image:
-    file: ../../assets/houston.webp
-  actions:
-    - text: Example Guide
-      link: /guides/example/
-      icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
-      variant: minimal
+    file: ../../assets/logo/fonij_logo.png
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Card, CardGrid, LinkCard } from "@astrojs/starlight/components";
 
-## Next steps
+## What Do You Want To Build?
+
+<CardGrid>
+  <LinkCard title="AI App" href="/product-builder-handbook/build-ai-app/" />
+</CardGrid>
+
+## Fonij Ecosystem
+
+The handbook documents the thinking.
+
+**Fonij turns that thinking into reusable products.**
+
+I use the principles documented here to build an ecosystem of:
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Change page layout" icon="document">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+  <Card title="Open Source Libraries" icon="github">
+    Small, focused libraries that solve recurring product-development problems
+    and can be reused across projects.
+  </Card>
+
+<Card title="Production-Ready Starters" icon="rocket">
+  Minimal but production-ready foundations for starting new products without
+  rebuilding the same infrastructure every time.
+</Card>
+
+<Card title="Product Templates" icon="document">
+  Ready-to-use application and interface templates designed to reduce the
+  distance between an idea and a working product.
+</Card>
+
+  <Card title="Product & Engineering Services" icon="people">
+    Practical product development, architecture, and engineering services built
+    around the same principles documented in this handbook.
+  </Card>
 </CardGrid>
+
+[Explore the Fonij ecosystem →](/05-fonij-ecosystem/)
+
+---
+
+**What do we build for, if not to lessen each other’s hardship?**

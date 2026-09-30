@@ -16,19 +16,6 @@ export default defineConfig({
           href: "https://github.com/FonijBuild/product-builder-handbook",
         },
       ],
-      sidebar: [
-        {
-          label: "Guides",
-          items: [
-            // Each item here is one entry in the navigation menu.
-            { label: "Example Guide", slug: "guides/example" },
-          ],
-        },
-        {
-          label: "Reference",
-          items: [{ autogenerate: { directory: "reference" } }],
-        },
-      ],
     }),
   ],
 });
