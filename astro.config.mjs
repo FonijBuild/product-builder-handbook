@@ -9,6 +9,13 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "Product Builder Handbook",
+      customCss: ["./src/styles/custom.css"],
+      components: {
+        // Header: "./src/components/overrides/Header.astro",
+        Footer: "./src/components/overrides/Footer.astro",
+        // Optional, if you used the Pagination override approach:
+        // Pagination: "./src/components/overrides/Pagination.astro",
+      },
       social: [
         {
           icon: "github",

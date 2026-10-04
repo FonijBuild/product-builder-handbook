@@ -1,55 +1,40 @@
 ---
-title: Home
+title: " "
 description: Practical principles, patterns, and lessons for building, shipping, and selling modern software products in the AI era.
 template: splash
-
-hero:
-  title: Build Better Products
-  tagline: Documentation and practical guides for building maintainable, scalable products in the AI era.
-  image:
-    file: ../../assets/logo/fonij_logo.png
 ---
 
 import { Card, CardGrid, LinkCard } from "@astrojs/starlight/components";
 
-## What Do You Want To Build?
-
-<CardGrid>
-  <LinkCard title="AI App" href="/product-builder-handbook/build-ai-app/" />
-</CardGrid>
-
-## Fonij Ecosystem
-
-The handbook documents the thinking.
-
-**Fonij turns that thinking into reusable products.**
-
-I use the principles documented here to build an ecosystem of:
-
-<CardGrid stagger>
-  <Card title="Open Source Libraries" icon="github">
-    Small, focused libraries that solve recurring product-development problems
-    and can be reused across projects.
-  </Card>
-
-<Card title="Production-Ready Starters" icon="rocket">
-  Minimal but production-ready foundations for starting new products without
-  rebuilding the same infrastructure every time.
-</Card>
-
-<Card title="Product Templates" icon="document">
-  Ready-to-use application and interface templates designed to reduce the
-  distance between an idea and a working product.
-</Card>
-
-  <Card title="Product & Engineering Services" icon="people">
-    Practical product development, architecture, and engineering services built
-    around the same principles documented in this handbook.
-  </Card>
-</CardGrid>
-
-[Explore the Fonij ecosystem →](/05-fonij-ecosystem/)
-
----
-
-**What do we build for, if not to lessen each other’s hardship?**
+<div class="home-wrapper">
+  <section class="home-paths">
+    <h2 class="home-section-title">What Do You Want To Build?</h2>
+    <CardGrid>
+      <LinkCard
+        title="Web App"
+        href="/product-builder-handbook/build-web-app/"
+      />
+      <LinkCard
+        title="Mobile App"
+        href="/product-builder-handbook/build-mobile-app/"
+      />
+      <LinkCard title="Blog" href="/product-builder-handbook/build-blog/" />
+      <LinkCard title="AI App" href="/product-builder-handbook/build-ai-app/" />
+      <LinkCard
+        title="Portfolio"
+        href="/product-builder-handbook/build-portfolio/"
+      />
+      <LinkCard title="CLI" href="/product-builder-handbook/build-cli/" />
+      <LinkCard
+        title="Python Package"
+        href="/product-builder-handbook/build-python-package/"
+      />
+      <LinkCard
+        title="Documentation Website"
+        href="/product-builder-handbook/build-documentation-website/"
+      />
+      <LinkCard title="LLM" href="/product-builder-handbook/build-llm/" />
+      <LinkCard title="API" href="/product-builder-handbook/build-api/" />
+    </CardGrid>
+  </section>
+</div>
